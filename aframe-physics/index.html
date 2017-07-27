@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>aframe-physics</title>
+        <script src="../jquery-3.1.1.min.js"></script>
+        <script src="../aframe.min.js"></script>
+        <script src="./aframe-physics-system.min.js"></script>
+        <script src="./common.js"></script>
+    </head>
+<body>
+<a-scene physics="debug: true; gravity:-9.8;">
+    <a-camera></a-camera>
+    <a-entity hit dynamic-body geometry="primitive: sphere" position=" -5 3 -10 " ></a-entity>
+    <a-entity hit dynamic-body geometry="primitive: sphere" position=" -4 3 -10 " ></a-entity>
+    <a-entity hit dynamic-body geometry="primitive: sphere" position=" -5 3 -10 " ></a-entity>
+    <a-entity hit dynamic-body geometry="primitive: sphere" position=" 0 4 -10 " ></a-entity>
+    <a-entity hit dynamic-body geometry="primitive: sphere" position=" -2 2 -10 " ></a-entity>
+    <a-entity static-body geometry="primitive: box; width: 300; depth: 300; height: 1" position="0 0 0" ></a-entity>
+    <a-sky color="blue"></a-sky>
+</a-scene>
+</body>
+</html>
